@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS — Zadanie</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; max-width: 860px; margin: 0 auto; color: #111; background: #f9fafb; }
+    .uloha { border-left: 4px solid #3b82f6; background: #eff6ff; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin-bottom: 1.5rem; }
+    .uloha h2 { margin: 0 0 .5rem; color: #1e40af; font-size: 1.1rem; }
+    .uloha p, .uloha li { margin: .3rem 0; color: #374151; }
+    .projekt { border-left: 4px solid #22c55e; background: #f0fdf4; }
+    .projekt h2 { color: #15803d; }
+    .bonus { border-left: 4px solid #a855f7; background: #fdf4ff; }
+    .bonus h2 { color: #7e22ce; }
+    .info { border-left: 4px solid #6366f1; background: #eef2ff; padding: .75rem 1.25rem; border-radius: 0 .5rem .5rem 0; margin-bottom: 1.5rem; }
+    code { background: #e5e7eb; padding: .1rem .4rem; border-radius: .25rem; font-size: .9rem; }
+    pre { background: #1e1e1e; color: #9cdcfe; padding: 1rem 1.25rem; border-radius: .5rem; font-size: .88rem; overflow-x: auto; margin: .5rem 0; }
+    .oddelovac { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+    ol, ul { padding-left: 1.4rem; }
+    li { margin-bottom: .35rem; }
+  </style>
+</head>
+
+<body>
+
+<h1 style="color:#4f46e5; margin-bottom:.15rem">Tailwind CSS — Prvá hodina</h1>
+<p style="color:#6b7280; margin-top:0; margin-bottom:.75rem">Pracovný list · III.C · TIR</p>
+
+<div class="info">
+  <strong>Ako to funguje dnes:</strong> Toto je zadanie — čítaš ho a vieš čo robiť.
+  Kód píšeš do súboru <strong>02_tailwind_uvod_kostra.html</strong>, ktorý otvoríš vedľa.
+  Nezabudni ho po každej zmene uložiť (<code>Ctrl+S</code>) a obnoviť prehliadač (<code>F5</code>).
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ ÚLOHA 0 ══════════ -->
+<div class="uloha">
+  <h2>Úloha 0 — Aktivácia Tailwindu</h2>
+  <p>V súbore <code>kostra.html</code> nájdi zakomentovaný <code>&lt;script&gt;</code> tag a odkomentuj ho (zmaž <code>&lt;!--</code> a <code>--&gt;</code> okolo neho).</p>
+  <p>Ulož, obnov prehliadač. Čo sa zmenilo? (Zatiaľ asi nič — Tailwind čaká na triedy.)</p>
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ ÚLOHA 1 ══════════ -->
+<div class="uloha">
+  <h2>Úloha 1 — Objav: farby a veľkosti textu</h2>
+  <p>V sekcii <em>Úloha 1</em> v kostra.html máš nadpis a odstavec. <strong>Nepíš vlastné CSS</strong> — len pridávaj triedy do <code>class=""</code>.</p>
+  <ol>
+    <li>Čo urobí <code>text-blue-600</code>? <em>Predikuj, potom pridaj a over.</em></li>
+    <li>Skús <code>text-blue-100</code> vs. <code>text-blue-900</code>. Čo znamená to číslo?</li>
+    <li>Čo urobí <code>text-4xl</code>? A <code>text-sm</code>? Aký je rozdiel?</li>
+    <li>Vyskúšaj <code>font-bold</code> a <code>font-light</code> — aký je vizuálny rozdiel?</li>
+    <li><em>Bonus k úlohe:</em> Nájdi triedu na kurzívu. Nápoveda: začína na <code>italic</code>.</li>
+  </ol>
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ ÚLOHA 2 ══════════ -->
+<div class="uloha">
+  <h2>Úloha 2 — Objav: spacing scale (systém medzier)</h2>
+  <p>Tailwind má vstavané hodnoty — nie sú náhodné. V sekcii <em>Úloha 2</em> máš dva boxy.</p>
+  <ol>
+    <li>Pridaj k prvému boxu <code>p-1</code>, potom <code>p-2</code>, potom <code>p-4</code>, potom <code>p-8</code>. Je to padding, ako počíta tú hodnotu? (Nápoveda: otvor DevTools — <code>F12</code> → záložka <em>Computed</em>.)</li>
+    <li>Čo urobí <code>px-4</code>? A <code>py-4</code>? Čo znamená <code>x</code> a <code>y</code>?</li>
+    <li>Skús <code>mt-8</code>, <code>mb-2</code>, <code>mx-auto</code> — čo robí <code>auto</code>?</li>
+    <li><em>Výzva:</em> Potrebuješ presne <code>13px</code> padding (hodnota, ktorú Tailwind nemá priamo). Skús <code>p-[13px]</code>. Čo sa stalo? (Toto sa volá <strong>arbitrary value</strong>.)</li>
+  </ol>
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ ÚLOHA 3 ══════════ -->
+<div class="uloha">
+  <h2>Úloha 3 — Kartička: pozadie, rohy, tieň</h2>
+  <p>V sekcii <em>Úloha 3</em> máš prázdny div. Pridávaj triedy jednu po druhej:</p>
+  <ul>
+    <li><code>bg-white</code> — pozadie. Skús aj <code>bg-indigo-50</code>, <code>bg-slate-100</code></li>
+    <li><code>p-6</code> — padding. Čo urobí <code>p-2</code> vs. <code>p-10</code>?</li>
+    <li><code>rounded-xl</code> — zaoblené rohy. Porovnaj <code>rounded</code>, <code>rounded-lg</code>, <code>rounded-full</code></li>
+    <li><code>shadow-md</code> — tieň. Skús <code>shadow-sm</code> a <code>shadow-2xl</code></li>
+    <li><code>max-w-sm</code> — maximálna šírka. Čo urobí <code>max-w-xs</code> vs. <code>max-w-lg</code>?</li>
+    <li><code>border border-gray-200</code> — rámček. Skús <code>border-2 border-indigo-300</code></li>
+  </ul>
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ ÚLOHA 4 ══════════ -->
+<div class="uloha">
+  <h2>Úloha 4 — Flex: navBar (logo vľavo, linky vpravo)</h2>
+  <p>V CSS by si napísal(a) <code>display: flex; justify-content: space-between; align-items: center;</code> — to je 3 riadky CSS. V Tailwinde sú to 3 triedy.</p>
+  <p>V sekcii <em>Úloha 4</em> máš <code>&lt;nav&gt;</code> s logom a odkazmi. Úloha:</p>
+  <ol>
+    <li>Daj <code>flex</code> priamo do <code>&lt;nav&gt;</code>. Čo sa stalo s rozložením?</li>
+    <li>Pridaj <code>justify-between</code>. Teraz?</li>
+    <li>Pridaj <code>items-center</code>. Čo to robí?</li>
+    <li>Pridaj <code>px-6 py-3 bg-indigo-700</code> na celý nav a <code>text-white</code> na logo a linky.</li>
+    <li><em>Výzva:</em> Daj medzi linky medzeru pomocou <code>gap-4</code> (alebo <code>space-x-4</code>) na div s linkami. Aký je rozdiel?</li>
+  </ol>
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ ÚLOHA 5 ══════════ -->
+<div class="uloha">
+  <h2>Úloha 5 — Responzivita: sm: md: lg:</h2>
+  <p>V klasickom CSS by si napísal(a) celý <code>@media</code> blok. Tailwind má predpony:</p>
+  <pre>sm: → min-width: 640px
+md: → min-width: 768px
+lg: → min-width: 1024px</pre>
+  <p>V sekcii <em>Úloha 5</em> máš nadpis a odstavec. Skús:</p>
+  <ol>
+    <li>Pridaj <code>text-base md:text-2xl lg:text-4xl</code> na nadpis. Zúži a rozšír okno prehliadača. Čo sa deje?</li>
+    <li>Skús <code>hidden md:block</code> na odstavec — čo to urobí?</li>
+    <li><em>Výzva:</em> Urob, aby bol nav z Úlohy 4 na mobile skrytý (<code>hidden</code>) a na desktop viditeľný (<code>md:flex</code>).</li>
+  </ol>
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ MINI-PROJEKT ══════════ -->
+<div class="uloha projekt">
+  <h2>🎯 Mini-projekt — Tvoja vizitka</h2>
+  <p>Vytvor svoju vlastnú <strong>vizitku (profile card)</strong>. Píš do sekcie <em>Mini-projekt</em> v kostra.html.</p>
+  <p><strong>Musí obsahovať:</strong></p>
+  <ul>
+    <li>✅ Kruh s iniciálami namiesto fotky (<code>rounded-full</code>, flexbox na centrovanie písmen)</li>
+    <li>✅ Tvoje meno — veľký, tučný nadpis</li>
+    <li>✅ Badge / odznak s tvojou rolou alebo triedou (tvary: <code>rounded-full</code>, farby: <code>bg-indigo-100 text-indigo-700</code>)</li>
+    <li>✅ Krátke bio — 1–2 vety</li>
+    <li>✅ Tlačidlo <em>„Kontakt"</em></li>
+    <li>✅ Celá karta vycentrovaná uprostred stránky</li>
+  </ul>
+  <p style="margin-top:.75rem"><strong>Postup:</strong> Najprv napíš samotné HTML elementy bez tried. Až keď máš štruktúru, pridávaj triedy jednu po druhej. Sleduj výsledok po každej zmene.</p>
+  <p><strong>Tip na centrovanie:</strong> <code>min-h-screen flex items-center justify-center</code> na <code>&lt;body&gt;</code>.</p>
+</div>
+
+<hr class="oddelovac">
+
+
+<!-- ══════════ BONUS ══════════ -->
+<div class="uloha bonus">
+  <h2>⭐ Bonus</h2>
+  <p>Pre tých, ktorí vizitku stihli. Vyber si:</p>
+  <ol>
+    <li>
+      <strong>Hover + transition na tlačidle:</strong>
+      <pre>hover:bg-indigo-700  transition-colors  duration-200  cursor-pointer</pre>
+      Čo je <code>duration-200</code>? Skús <code>duration-700</code>. Čo sa zmení?
+    </li>
+    <li>
+      <strong>Tmavá vizitka:</strong> Zmeň kartu na tmavú verziu.
+      <br>Nápoveda: <code>bg-gray-900</code> na kartu, <code>text-white</code> na meno, <code>text-gray-400</code> na bio, <code>bg-gray-950</code> na stránku.
+      <br>Čo treba ešte zmeniť, aby zostalo všetko čitateľné?
+    </li>
+    <li>
+      <strong>Druhé tlačidlo (obrysové):</strong> Pridaj tlačidlo <em>„Viac info"</em> bez farebného pozadia:
+      <pre>border border-indigo-600 text-indigo-600 hover:bg-indigo-50 transition-colors</pre>
+      Dve tlačidlá vedľa seba: obaľ ich do <code>&lt;div class="flex gap-3"&gt;</code>.
+    </li>
+    <li>
+      <strong>Grid troch kariet:</strong> Pod vizitku pridaj sekciu s troma kartičkami vedľa seba.
+      <pre>grid grid-cols-1 md:grid-cols-3 gap-4</pre>
+      Čo sa stane, keď zúžiš okno pod 768px? Prečo?
+    </li>
+  </ol>
+</div>
+
+</body>
+</html>
