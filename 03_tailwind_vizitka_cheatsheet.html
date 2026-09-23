@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind — Cheatsheet (vizitka)</title>
+  <style>
+    body { font-family: sans-serif; padding: 1.5rem 2rem; max-width: 1000px; margin: 0 auto; color: #1e293b; background: #f8fafc; line-height: 1.4; }
+    h1 { color:#4f46e5; margin:0 0 .1rem; font-size:1.5rem; }
+    .podtitul { color:#6b7280; margin:0 0 1rem; font-size:.9rem; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem 1.5rem; }
+    .karta { background:#fff; border:1px solid #e2e8f0; border-radius:.6rem; padding:.8rem 1rem; break-inside:avoid; }
+    .karta h2 { font-size:1rem; margin:0 0 .5rem; color:#312e81; border-bottom:2px solid #e0e7ff; padding-bottom:.3rem; }
+    table { width:100%; border-collapse:collapse; font-size:.86rem; }
+    td { padding:.28rem .3rem; border-bottom:1px solid #f1f5f9; vertical-align:top; }
+    td:first-child { white-space:nowrap; padding-right:.7rem; }
+    code { background:#e0e7ff; color:#3730a3; padding:.08rem .4rem; border-radius:.3rem; font-family:'Cascadia Code','Consolas',monospace; font-size:.86rem; }
+    pre { background:#0f172a; color:#7dd3fc; padding:.7rem .9rem; border-radius:.5rem; font-size:.8rem; overflow-x:auto; margin:.3rem 0 0; line-height:1.5; font-family:'Cascadia Code','Consolas',monospace; }
+    .cele { grid-column:1 / -1; }
+    .tip { background:#fffbeb; border-left:4px solid #f59e0b; padding:.5rem .9rem; border-radius:0 .4rem .4rem 0; font-size:.85rem; margin-top:1rem; }
+    @media print { body{background:#fff;padding:0;} .karta{border-color:#cbd5e1;} }
+  </style>
+</head>
+<body>
+
+<h1>Tailwind CSS — cheatsheet</h1>
+<p class="podtitul">Vizitka · III.C · TIR · maj po ruke pri práci</p>
+
+<div class="grid">
+
+  <div class="karta cele">
+    <h2>Kostra HTML stránky</h2>
+    <pre>&lt;!doctype html&gt;
+&lt;html lang="sk"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Moja vizitka&lt;/title&gt;
+  &lt;script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- sem píšeš obsah --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+  </div>
+
+  <div class="karta">
+    <h2>Text</h2>
+    <table>
+      <tr><td><code>text-sm</code> … <code>text-3xl</code></td><td>veľkosť písma (sm, base, lg, xl, 2xl, 3xl)</td></tr>
+      <tr><td><code>font-bold</code></td><td>tučné · <code>font-medium</code>, <code>font-light</code></td></tr>
+      <tr><td><code>italic</code></td><td>kurzíva</td></tr>
+      <tr><td><code>text-center</code></td><td>zarovnanie na stred</td></tr>
+      <tr><td><code>text-gray-600</code></td><td>farba textu (600 = sivá, 800 = tmavá)</td></tr>
+      <tr><td><code>text-white</code></td><td>biely text</td></tr>
+    </table>
+  </div>
+
+  <div class="karta">
+    <h2>Farby pozadia</h2>
+    <table>
+      <tr><td><code>bg-white</code></td><td>biele pozadie</td></tr>
+      <tr><td><code>bg-gray-100</code></td><td>svetlosivé · <code>bg-gray-900</code>, <code>bg-gray-950</code> tmavé</td></tr>
+      <tr><td><code>bg-blue-600</code></td><td>modrá (tlačidlo)</td></tr>
+      <tr><td><code>bg-blue-100</code></td><td>svetlomodrá (badge)</td></tr>
+      <tr><td colspan="2" style="color:#64748b">Číslo 50→950 = od najsvetlejšej po najtmavšiu.</td></tr>
+    </table>
+  </div>
+
+  <div class="karta">
+    <h2>Box / karta</h2>
+    <table>
+      <tr><td><code>p-6</code></td><td>vnútorný odstup · <code>px-3</code> (bok), <code>py-1</code> (hore-dole)</td></tr>
+      <tr><td><code>mt-2</code> <code>mt-4</code> <code>mt-5</code></td><td>medzera nad prvkom (margin-top)</td></tr>
+      <tr><td><code>rounded-xl</code></td><td>zaoblené rohy · <code>rounded-lg</code>, <code>rounded-full</code></td></tr>
+      <tr><td><code>shadow-lg</code></td><td>tieň · <code>shadow-sm</code>, <code>shadow-2xl</code></td></tr>
+      <tr><td><code>max-w-sm</code></td><td>max. šírka · <code>max-w-md</code>, <code>max-w-xs</code></td></tr>
+      <tr><td><code>border border-blue-600</code></td><td>rámček + jeho farba</td></tr>
+    </table>
+  </div>
+
+  <div class="karta">
+    <h2>Rozloženie (flex)</h2>
+    <table>
+      <tr><td><code>flex</code></td><td>zapne flexbox</td></tr>
+      <tr><td><code>items-center</code></td><td>centruje zvisle</td></tr>
+      <tr><td><code>justify-center</code></td><td>centruje vodorovne</td></tr>
+      <tr><td><code>gap-3</code></td><td>medzera medzi prvkami</td></tr>
+      <tr><td><code>min-h-screen</code></td><td>výška aspoň na celú obrazovku</td></tr>
+      <tr><td><code>inline-block</code></td><td>prvok obalí len svoj obsah (badge)</td></tr>
+    </table>
+  </div>
+
+  <div class="karta">
+    <h2>Responzívne predpony</h2>
+    <table>
+      <tr><td><code>sm:</code></td><td>od 640 px</td></tr>
+      <tr><td><code>md:</code></td><td>od 768 px</td></tr>
+      <tr><td><code>lg:</code></td><td>od 1024 px</td></tr>
+    </table>
+    <p style="margin:.5rem 0 0;font-size:.83rem">Príklad: <code>text-base md:text-3xl</code> = malé na mobile, veľké na širokej obrazovke.</p>
+  </div>
+
+  <div class="karta">
+    <h2>Stavy a prechody</h2>
+    <table>
+      <tr><td><code>hover:bg-blue-700</code></td><td>zmena pri prejdení myšou</td></tr>
+      <tr><td><code>transition-colors</code></td><td>plynulá zmena farby</td></tr>
+      <tr><td><code>cursor-pointer</code></td><td>kurzor „ruka"</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<div class="tip">
+  💡 <strong>Nevieš, čo trieda robí?</strong> Pridaj ju, ulož, pozri. Alebo <strong>vypni/zapni</strong> — vymaž ju a vráť. · <strong>F12</strong> → záložka <em>Computed</em> ukáže presné hodnoty. · Vlastná hodnota: <code>p-[13px]</code>.
+</div>
+
+</body>
+</html>
