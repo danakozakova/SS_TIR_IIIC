@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tailwind — cheatsheet (téma 04)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8fafc; color: #1e293b; font-size: 20px; line-height: 1.7; }
+nav { position: sticky; top: 0; background: #1e1b4b; color: white; display: flex; gap: .25rem; padding: .6rem 2rem; flex-wrap: wrap; z-index: 100; align-items: center; }
+nav strong { color: white; margin-right: .5rem; }
+nav a { color: #a5b4fc; text-decoration: none; font-size: .85rem; padding: .3rem .9rem; border-radius: .25rem; }
+nav a:hover { background: #312e81; color: white; }
+section { max-width: 960px; margin: 0 auto; padding: 3rem 2rem 2.5rem; border-bottom: 1px solid #e2e8f0; }
+section:last-child { border-bottom: none; }
+h1 { font-size: 2.2rem; color: #1e1b4b; margin-bottom: .5rem; }
+h2 { font-size: 1.8rem; color: #312e81; margin-bottom: 1.2rem; padding-bottom: .5rem; border-bottom: 2px solid #e0e7ff; }
+h3 { font-size: 1.25rem; color: #4338ca; margin: 1.75rem 0 .6rem; }
+p  { margin-bottom: .85rem; }
+ul, ol { margin: .5rem 0 .85rem 1.5rem; }
+li { margin-bottom: .5rem; }
+code { background: #e0e7ff; color: #3730a3; padding: .15rem .5rem; border-radius: .3rem; font-size: .88em; font-family: 'Cascadia Code', 'Fira Code', monospace; }
+pre  { background: #0f172a; color: #7dd3fc; padding: 1.4rem 1.8rem; border-radius: .75rem; font-family: 'Cascadia Code', 'Fira Code', monospace; font-size: .95rem; overflow-x: auto; margin: 1rem 0 1.5rem; line-height: 1.7; }
+pre .cm { color: #64748b; } pre .at { color: #fbbf24; } pre .st { color: #86efac; } pre .tg { color: #60a5fa; } pre .kw { color: #c084fc; }
+.info    { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin: 1rem 0; }
+.tip     { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin: 1rem 0; }
+.warn    { background: #fff7ed; border-left: 4px solid #f97316; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin: 1rem 0; }
+.pozn    { background: #fdf4ff; border-left: 4px solid #a855f7; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin: 1rem 0; }
+.zadanie { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 1.25rem 1.75rem; border-radius: 0 .75rem .75rem 0; margin: 1rem 0; }
+.zadanie h3 { margin-top: 0; color: #15803d; }
+.cheat { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .9rem; }
+.cheat th { background: #312e81; color: white; padding: .7rem 1rem; text-align: left; }
+.cheat td { padding: .55rem 1rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+.cheat tr:nth-child(even) td { background: #f8fafc; }
+.cheat code { background: #ddd6fe; color: #3730a3; }
+.vs { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+.vs-box { background: #1e293b; border-radius: .75rem; padding: 1.25rem 1.5rem; }
+.vs-box h4 { color: #94a3b8; font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: .75rem; }
+.vs-box pre { background: transparent; padding: 0; margin: 0; font-size: .88rem; color: #7dd3fc; }
+.vs-box.dobry h4 { color: #4ade80; } .vs-box.zly h4 { color: #f87171; }
+.obr { text-align: center; margin: 1rem 0 1.5rem; }
+.obr img { max-width: 100%; border: 1px solid #e2e8f0; border-radius: .75rem; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.obr figcaption { font-size: .85rem; color: #64748b; margin-top: .4rem; }
+.par { display: flex; gap: 1rem; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+.par figure { margin: 0; }
+.nove { display: inline-block; background: #fef3c7; color: #92400e; font-size: .75rem; font-weight: bold; padding: .1rem .55rem; border-radius: 1rem; margin-right: .3rem; vertical-align: middle; }
+</style>
+</head>
+<body>
+<nav><strong>Cheatsheet · téma 04</strong><a href="#nove">Nové triedy</a><a href="#vzory">Ako sa čítajú</a><a href="#gridflex">Grid vs. flex</a></nav>
+<section id="nove">
+  <h1>Tailwind CSS — cheatsheet (téma 04)</h1>
+  <p style="color:#64748b">Vylepšujeme vizitku · III.C · TIR · maj po ruke pri práci. Staršie triedy nájdeš v cheatsheete z témy 03.</p>
+
+  <h2>Nové triedy dnes</h2>
+  <table class="cheat">
+    <tr><th>Trieda</th><th>Čo robí</th><th>Príklad</th></tr>
+    <tr><td><code>justify-between</code></td><td>prvé dieťa úplne vľavo, posledné úplne vpravo, voľné miesto sa rozdelí medzi ne (treba <code>flex</code> na rodičovi)</td><td>riadok odkazov: <code>flex justify-between</code></td></tr>
+    <tr><td><code>underline</code></td><td>podčiarknutie textu</td><td><code>hover:underline</code> — len pri myši</td></tr>
+    <tr><td><code>w-16</code> <code>h-16</code></td><td>šírka a výška; číslo × 4 px (16 → 64 px)</td><td>avatar: <code>w-16 h-16 rounded-full</code></td></tr>
+    <tr><td><code>grid</code></td><td>zapne mriežku (riadky aj stĺpce)</td><td><code>grid grid-cols-3 gap-4</code></td></tr>
+    <tr><td><code>grid-cols-3</code></td><td>3 rovnako široké stĺpce (číslo = počet stĺpcov)</td><td><code>grid-cols-1 md:grid-cols-3</code></td></tr>
+    <tr><td><code>-translate-y-1</code></td><td>posun nahor o 4 px (minus = opačný smer)</td><td><code>hover:-translate-y-1</code></td></tr>
+    <tr><td><code>transition</code></td><td>zapne plynulý prechod pri zmene (tieň, posun, veľkosť, farby…)</td><td><code>transition duration-300</code></td></tr>
+    <tr><td><code>duration-300</code></td><td>dĺžka prechodu v ms (75, 150, 300, 500, 700, 1000)</td><td>kratšie = rýchlejšie</td></tr>
+    <tr><td><code>scale-105</code></td><td>zväčšenie na 105 %</td><td><code>hover:scale-105</code></td></tr>
+  </table>
+  <p><strong>Bonus:</strong> <code>col-span-2</code> — prvok zaberie 2 stĺpce mriežky · <code>rotate-3</code> — natočenie o 3°.</p>
+</section>
+<section id="vzory">
+  <h2>Ako sa to číta</h2>
+  <ul>
+    <li><code>hover:</code> + trieda = platí len pri prejdení myšou (<code>hover:underline</code>, <code>hover:scale-105</code>).</li>
+    <li><code>md:</code> + trieda = platí od šírky okna 768 px. Bez predpony platí vždy (<code>grid-cols-1 md:grid-cols-3</code>: mobil 1 stĺpec, od 768 px 3).</li>
+    <li>Záporné číslo sa píše s <code>-</code> pred názvom: <code>-translate-y-1</code> = nahor.</li>
+    <li>Dve triedy <code>transition-…</code> na jednom prvku sa „hádajú“. Ak chceš prechod pre všetko, daj len <code>transition</code>.</li>
+  </ul>
+</section>
+<section id="gridflex">
+  <h2>Grid vs. flex</h2>
+  <div class="vs">
+    <div class="vs-box dobry"><h4>flex</h4><pre>Jeden smer: riadok ALEBO stĺpec.
+Hodí sa na: menu, riadok odkazov,
+centrovanie, malé skupiny prvkov.</pre></div>
+    <div class="vs-box dobry"><h4>grid</h4><pre>Riadky AJ stĺpce naraz.
+Hodí sa na: galérie, kartičky,
+rozloženie celej stránky.</pre></div>
+  </div>
+  <div class="tip">💡 Nevieš, čo trieda robí? Pridaj ju, ulož, pozri. Alebo ju vypni (vymaž) a vráť. <code>F12</code> → <code>Ctrl+Shift+M</code> ukáže stránku ako na mobile.</div>
+</section>
+</body>
+</html>
