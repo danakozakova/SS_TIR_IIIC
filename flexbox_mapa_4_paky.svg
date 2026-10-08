@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1670" width="100%"><defs><marker id="ahdc2626" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="ah7c3aed" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="ah2563eb" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker></defs><rect width="1100" height="1670" fill="#ffffff"/><rect x="20" y="15" width="1060" height="48" rx="10" fill="#1e1b4b" stroke="#1e1b4b" stroke-width="0"/>
+<text x="550" y="45" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">FLEXBOX = 4 páky, ktoré nastavuješ na RODIČOVI</text>
+<text x="40" y="95" font-size="15" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0 · Základ: napíšeš <tspan font-weight="bold" fill="#4338ca">flex</tspan> na rodiča a jeho priame deti sa zoradia do rady</text>
+<rect x="40" y="110" width="420" height="100" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="60" y="125" width="70" height="40" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="95.0" y="150.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="150" y="125" width="70" height="70" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="185.0" y="165.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="240" y="125" width="70" height="55" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="275.0" y="157.5" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="345" y="150" font-size="13" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">← deti</text>
+<text x="345" y="168" font-size="13" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">(kocky)</text>
+<text x="42" y="227" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">RODIČ (prerušovaný rám)</text>
+<line x1="40" y1="257" x2="460" y2="257" stroke="#dc2626" stroke-width="2" marker-end="url(#ahdc2626)"/>
+<text x="250" y="247" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">HLAVNÁ OS (predvolene →)  ·  riadi ju justify-*</text>
+<text x="40" y="277" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">start = začiatok osi</text>
+<text x="460" y="277" font-size="11.5" font-weight="bold" fill="#c2410c" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">end = koniec osi</text>
+<line x1="490" y1="110" x2="490" y2="210" stroke="#7c3aed" stroke-width="2" marker-end="url(#ah7c3aed)"/>
+<text x="503" y="122" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">start (hore)</text>
+<text x="503" y="158" font-size="13" font-weight="bold" fill="#7c3aed" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">PRIEČNA OS</text>
+<text x="503" y="176" font-size="12" font-weight="normal" fill="#7c3aed" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">kolmo na hlavnú</text>
+<text x="503" y="192" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">riadi ju items-*</text>
+<text x="503" y="212" font-size="11.5" font-weight="bold" fill="#c2410c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">end (dole)</text>
+<rect x="700" y="105" width="380" height="165" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="715" y="130" font-size="14" font-weight="bold" fill="#1e1b4b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Postup pri každom obrázku</text>
+<text x="720" y="155" font-size="13" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0 · rodič a deti</text>
+<text x="720" y="177" font-size="13" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1 · smer (row / col)</text>
+<text x="720" y="199" font-size="13" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2 · justify — hlavná os</text>
+<text x="720" y="221" font-size="13" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3 · items — priečna os</text>
+<text x="720" y="243" font-size="13" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">4 · wrap a gap</text>
+<rect x="20" y="290" width="520" height="335" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+<circle cx="46" cy="316" r="15" fill="#2563eb"/>
+<text x="46" y="322" font-size="17" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<text x="70" y="314" font-size="16" font-weight="bold" fill="#2563eb" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">SMER</text>
+<text x="70" y="332" font-size="12" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">kadiaľ tečú deti (číslo = poradie v HTML)</text>
+<text x="40" y="362" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-row</text>
+<text x="130" y="362" font-size="10.5" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">(predvolené)</text>
+<rect x="40" y="370" width="220" height="46" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="48" y="376" width="56" height="34" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="76.0" y="398.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="114" y="376" width="56" height="34" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="142.0" y="398.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="180" y="376" width="56" height="34" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="208.0" y="398.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<line x1="70" y1="435" x2="240" y2="435" stroke="#2563eb" stroke-width="2" marker-end="url(#ah2563eb)"/>
+<text x="295" y="362" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-row-reverse</text>
+<rect x="295" y="370" width="220" height="46" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="451" y="376" width="56" height="34" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="479.0" y="398.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="385" y="376" width="56" height="34" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="413.0" y="398.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="319" y="376" width="56" height="34" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="347.0" y="398.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<line x1="495" y1="435" x2="325" y2="435" stroke="#2563eb" stroke-width="2" marker-end="url(#ah2563eb)"/>
+<text x="40" y="462" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-col</text>
+<rect x="40" y="470" width="90" height="112" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="48" y="476" width="74" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="85.0" y="495.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="48" y="510" width="74" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="85.0" y="529.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="48" y="544" width="74" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="85.0" y="563.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<line x1="148" y1="476" x2="148" y2="578" stroke="#2563eb" stroke-width="2" marker-end="url(#ah2563eb)"/>
+<text x="162" y="522" font-size="11" font-weight="normal" fill="#1d4ed8" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">začiatok hore</text>
+<text x="295" y="462" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-col-reverse</text>
+<rect x="295" y="470" width="90" height="112" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="303" y="544" width="74" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="340.0" y="563.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="303" y="510" width="74" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="340.0" y="529.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="303" y="476" width="74" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="340.0" y="495.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<line x1="403" y1="578" x2="403" y2="476" stroke="#2563eb" stroke-width="2" marker-end="url(#ah2563eb)"/>
+<text x="417" y="522" font-size="11" font-weight="normal" fill="#1d4ed8" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">začiatok dole</text>
+<text x="40" y="601" font-size="11.5" font-weight="bold" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">reverse = obrátený smer; aj „začiatok“ osi (justify-start)</text>
+<text x="40" y="617" font-size="11.5" font-weight="bold" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">je potom na opačnej strane (viď koniec mapy)</text>
+<rect x="560" y="290" width="520" height="335" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="580" y="320" font-size="15" font-weight="bold" fill="#b91c1c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">⚠ flex-col otočí osi</text>
+<rect x="580" y="338" width="200" height="44" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="588" y="344" width="56" height="32" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="616.0" y="365.0" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="652" y="344" width="56" height="32" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="680.0" y="365.0" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="716" y="344" width="56" height="32" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="744.0" y="365.0" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<line x1="580" y1="398" x2="780" y2="398" stroke="#dc2626" stroke-width="2" marker-end="url(#ahdc2626)"/>
+<text x="680" y="418" font-size="11.5" font-weight="bold" fill="#dc2626" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">flex-row: hlavná →, priečna ↓</text>
+<rect x="830" y="332" width="80" height="100" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="838" y="338" width="64" height="24" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="870.0" y="355.0" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="838" y="368" width="64" height="24" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="870.0" y="385.0" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="838" y="398" width="64" height="24" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+<text x="870.0" y="415.0" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<line x1="925" y1="332" x2="925" y2="432" stroke="#dc2626" stroke-width="2" marker-end="url(#ahdc2626)"/>
+<text x="938" y="370" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">flex-col:</text>
+<text x="938" y="388" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">hlavná ↓</text>
+<text x="938" y="406" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">priečna →</text>
+<text x="580" y="480" font-size="13.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">justify-* = pozdĺž smeru toku</text>
+<text x="580" y="502" font-size="13.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">items-* = kolmo na smer toku</text>
+<text x="580" y="530" font-size="12.5" font-weight="bold" fill="#7c3aed" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Názvy tried sa nemenia, mení sa len to, kam smerujú.</text>
+<text x="580" y="565" font-size="12.5" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">↻ VNÁRANIE: dieťa môže byť samo rodič (flex v flexe) —</text>
+<text x="580" y="585" font-size="12.5" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">rovnaké 4 páky o úroveň nižšie.</text>
+<rect x="20" y="640" width="520" height="525" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+<circle cx="46" cy="666" r="15" fill="#16a34a"/>
+<text x="46" y="672" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2a</text>
+<text x="70" y="664" font-size="16" font-weight="bold" fill="#16a34a" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">HLAVNÁ OS · justify-*   (pri flex-row)</text>
+<text x="70" y="682" font-size="12" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">rozloženie VODOROVNE — v smere toku →</text>
+<text x="40" y="716" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-start</text>
+<rect x="40" y="723" width="480" height="38" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="48" y="728" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="73.0" y="747.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="104" y="728" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="129.0" y="747.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="160" y="728" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="185.0" y="747.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="776" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-center</text>
+<rect x="40" y="783" width="480" height="38" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="199.0" y="788" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="224.0" y="807.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="255.0" y="788" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="280.0" y="807.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="311.0" y="788" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="336.0" y="807.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="836" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-end</text>
+<rect x="40" y="843" width="480" height="38" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="350" y="848" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="375.0" y="867.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="406" y="848" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="431.0" y="867.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="462" y="848" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="487.0" y="867.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="896" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-between</text>
+<rect x="40" y="903" width="480" height="38" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="48" y="908" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="73.0" y="927.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="255.0" y="908" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="280.0" y="927.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="462" y="908" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="487.0" y="927.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="956" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-around   (von = ½ medzery)</text>
+<rect x="40" y="963" width="480" height="38" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="95.0" y="968" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="120.0" y="987.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="255.0" y="968" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="280.0" y="987.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="415.0" y="968" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="440.0" y="987.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="1016" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-evenly   (von = medzera)</text>
+<rect x="40" y="1023" width="480" height="38" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="122.5" y="1028" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="147.5" y="1047.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="255.0" y="1028" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="280.0" y="1047.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="387.5" y="1028" width="50" height="28" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="412.5" y="1047.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="1135" font-size="11.5" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">deti musia mať voľné miesto v šírke, inak sa nemá kam posúvať</text>
+<rect x="560" y="640" width="520" height="525" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+<circle cx="586" cy="666" r="15" fill="#16a34a"/>
+<text x="586" y="672" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2b</text>
+<text x="610" y="664" font-size="16" font-weight="bold" fill="#16a34a" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">HLAVNÁ OS · justify-*   (pri flex-col)</text>
+<text x="610" y="682" font-size="12" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">rozloženie ZVISLO — v smere toku ↓</text>
+<text x="660" y="712" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-start</text>
+<rect x="610" y="720" width="100" height="215" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="620" y="728" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="660.0" y="750.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="620" y="768" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="660.0" y="790.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="620" y="808" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="660.0" y="830.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="778" y="712" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-center</text>
+<rect x="728" y="720" width="100" height="215" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="738" y="770.5" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="778.0" y="792.5" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="738" y="810.5" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="778.0" y="832.5" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="738" y="850.5" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="778.0" y="872.5" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="896" y="712" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-end</text>
+<rect x="846" y="720" width="100" height="215" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="856" y="813" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="896.0" y="835.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="856" y="853" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="896.0" y="875.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="856" y="893" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="896.0" y="915.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="1014" y="712" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">justify-between</text>
+<rect x="964" y="720" width="100" height="215" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="974" y="728" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="1014.0" y="750.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="974" y="810.5" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="1014.0" y="832.5" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="974" y="893" width="80" height="34" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="1014.0" y="915.0" font-size="14" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<line x1="585" y1="720" x2="585" y2="935" stroke="#dc2626" stroke-width="2" marker-end="url(#ahdc2626)"/>
+<text x="580" y="968" font-size="11.5" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex flex-col justify-center h-64</text>
+<text x="580" y="988" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Bez výšky je rodič len tak vysoký ako deti → nič sa nepohne.</text>
+<rect x="580" y="1025" width="480" height="120" rx="8" fill="#fff" stroke="#16a34a" stroke-width="1.5"/>
+<text x="595" y="1047" font-size="12.5" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">BEZ gap · a = medzera medzi deťmi, von = pri okraji:</text>
+<text x="595" y="1069" font-size="12" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">between :  von = 0     dnu = a</text>
+<text x="595" y="1089" font-size="12" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">around  :  von = ½ a   dnu = a   → dnu = 2 × von</text>
+<text x="595" y="1109" font-size="12" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">evenly  :  von = a     dnu = a   → všade rovnako</text>
+<text x="595" y="1133" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">S gap: dnu = (hodnota vyššie) + gap, von sa zmenší  (strana 2)</text>
+<rect x="20" y="1180" width="520" height="480" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2.5"/>
+<circle cx="46" cy="1206" r="15" fill="#ea580c"/>
+<text x="46" y="1212" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3a</text>
+<text x="70" y="1204" font-size="16" font-weight="bold" fill="#ea580c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">PRIEČNA OS · items-*   (pri flex-row)</text>
+<text x="70" y="1222" font-size="12" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">zarovnanie ZVISLO — kolmo na tok</text>
+<text x="40" y="1260" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-stretch</text>
+<rect x="40" y="1267" width="230" height="72" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="50" y="1271" width="62" height="64" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="81.0" y="1308.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="122" y="1271" width="62" height="64" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="153.0" y="1308.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="194" y="1271" width="62" height="64" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="225.0" y="1308.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="1356" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">(predvolené) vyplnia výšku</text>
+<text x="290" y="1260" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-start</text>
+<rect x="290" y="1267" width="230" height="72" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="300" y="1271" width="62" height="22" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="331.0" y="1287.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="372" y="1271" width="62" height="44" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="403.0" y="1298.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="444" y="1271" width="62" height="30" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="475.0" y="1291.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="290" y="1356" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">hore</text>
+<text x="40" y="1400" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-center</text>
+<rect x="40" y="1407" width="230" height="72" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="50" y="1432.0" width="62" height="22" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="81.0" y="1448.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="122" y="1421.0" width="62" height="44" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="153.0" y="1448.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="194" y="1428.0" width="62" height="30" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="225.0" y="1448.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="40" y="1496" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">na stred</text>
+<text x="290" y="1400" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-end</text>
+<rect x="290" y="1407" width="230" height="72" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="300" y="1453" width="62" height="22" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="331.0" y="1469.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="372" y="1431" width="62" height="44" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="403.0" y="1458.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="444" y="1445" width="62" height="30" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="475.0" y="1465.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="290" y="1496" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">dole</text>
+<text x="40" y="1540" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-baseline</text>
+<rect x="40" y="1547" width="230" height="84" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="50" y="1581" width="62" height="27" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="81" y="1600" font-size="13" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Aa</text>
+<rect x="122" y="1568" width="62" height="40" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="153" y="1600" font-size="26" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Aa</text>
+<rect x="194" y="1576" width="62" height="32" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="225" y="1600" font-size="18" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Aa</text>
+<line x1="44" y1="1600" x2="266" y2="1600" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="40" y="1648" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">podľa účiarky písma (červená čiara)</text>
+<rect x="560" y="1180" width="520" height="480" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2.5"/>
+<circle cx="586" cy="1206" r="15" fill="#ea580c"/>
+<text x="586" y="1212" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3b</text>
+<text x="610" y="1204" font-size="16" font-weight="bold" fill="#ea580c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">PRIEČNA OS · items-*   (pri flex-col)</text>
+<text x="610" y="1222" font-size="12" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">zarovnanie VODOROVNE — kolmo na tok</text>
+<text x="580" y="1260" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-stretch</text>
+<rect x="580" y="1267" width="230" height="84" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="588" y="1272" width="214" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="695.0" y="1287.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="588" y="1296" width="214" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="695.0" y="1311.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="588" y="1320" width="214" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="695.0" y="1335.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="580" y="1368" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">(predvolené) vyplnia šírku</text>
+<text x="830" y="1260" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-start</text>
+<rect x="830" y="1267" width="230" height="84" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="838" y="1272" width="70" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="873.0" y="1287.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="838" y="1296" width="150" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="913.0" y="1311.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="838" y="1320" width="100" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="888.0" y="1335.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="830" y="1368" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">vľavo</text>
+<text x="580" y="1400" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-center</text>
+<rect x="580" y="1407" width="230" height="84" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="660.0" y="1412" width="70" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="695.0" y="1427.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="620.0" y="1436" width="150" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="695.0" y="1451.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="645.0" y="1460" width="100" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="695.0" y="1475.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="580" y="1508" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">na stred</text>
+<text x="830" y="1400" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-end</text>
+<rect x="830" y="1407" width="230" height="84" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="982" y="1412" width="70" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="1017.0" y="1427.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="902" y="1436" width="150" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="977.0" y="1451.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="952" y="1460" width="100" height="20" rx="4" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+<text x="1002.0" y="1475.0" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="830" y="1508" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">vpravo</text>
+<text x="580" y="1540" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">items-baseline</text>
+<text x="580" y="1564" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">pri flex-col sa správa ako items-start</text>
+<text x="580" y="1584" font-size="11" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">(zmysel má pri flex-row, keď majú deti rôzne veľké písmo)</text></svg>

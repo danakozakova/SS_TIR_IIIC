@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1840" width="1100" height="1840"><defs><marker id="ahdc2626" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="ah7c3aed" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="ah2563eb" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker></defs><rect width="1100" height="1840" fill="#fff"/><rect x="20" y="15" width="1060" height="56" rx="10" fill="#1e1b4b"/>
+<text x="550" y="52" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Strana 2 · zalamovanie, gap a reverse</text><g transform="translate(0,-1590)"><rect x="20" y="1675" width="520" height="335" rx="12" fill="#faf5ff" stroke="#9333ea" stroke-width="2.5"/>
+<circle cx="46" cy="1701" r="15" fill="#9333ea"/>
+<text x="46" y="1707" font-size="17" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">4</text>
+<text x="70" y="1699" font-size="16" font-weight="bold" fill="#9333ea" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">ZALAMOVANIE · GAP</text>
+<text x="70" y="1717" font-size="12" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">čo keď sa nezmestia / medzery</text>
+<text x="40" y="1755" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-wrap</text>
+<rect x="40" y="1763" width="300" height="100" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="70" y="1773" width="60" height="34" rx="4" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+<text x="100.0" y="1795.0" font-size="14" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="150" y="1773" width="60" height="34" rx="4" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+<text x="180.0" y="1795.0" font-size="14" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="230" y="1773" width="60" height="34" rx="4" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+<text x="260.0" y="1795.0" font-size="14" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<rect x="70" y="1821" width="60" height="34" rx="4" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+<text x="100.0" y="1843.0" font-size="14" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">4</text>
+<rect x="150" y="1821" width="60" height="34" rx="4" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+<text x="180.0" y="1843.0" font-size="14" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">5</text>
+<g stroke="#dc2626" stroke-width="1.6"><line x1="130" y1="1790" x2="150" y2="1790"/><line x1="130" y1="1785" x2="130" y2="1795"/><line x1="150" y1="1785" x2="150" y2="1795"/><line x1="100" y1="1807" x2="100" y2="1821"/><line x1="95" y1="1807" x2="105" y2="1807"/><line x1="95" y1="1821" x2="105" y2="1821"/></g>
+<text x="360" y="1793" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">← gap</text>
+<text x="360" y="1811" font-size="11" font-weight="normal" fill="#dc2626" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">medzera vodorovne</text>
+<text x="360" y="1827" font-size="11" font-weight="normal" fill="#dc2626" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">aj zvislo</text>
+<text x="40" y="1893" font-size="13" font-weight="bold" fill="#7e22ce" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">gap-N  =  N × 4 px</text>
+<text x="40" y="1915" font-size="11.5" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">gap-4 = 16 px · gap-6 = 24 px · gap-8 = 32 px</text>
+<text x="40" y="1935" font-size="11.5" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">gap-x-N vodorovne · gap-y-N zvislo</text>
+<text x="40" y="1957" font-size="11.5" font-weight="bold" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">gap = pevná medzera LEN MEDZI deťmi (okraj nerobí).</text>
+<text x="40" y="1975" font-size="11.5" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Miesto pri okraji pridá justify-around/evenly; gap sa k nemu</text>
+<text x="40" y="1991" font-size="11.5" font-weight="normal" fill="#475569" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">pripočíta (medzi deťmi je gap + podiel voľného miesta).</text>
+<rect x="560" y="1675" width="520" height="335" rx="12" fill="#f8fafc" stroke="#1e1b4b" stroke-width="2.5"/>
+<rect x="560" y="1675" width="520" height="44" rx="12" fill="#1e1b4b"/>
+<text x="820" y="1704" font-size="17" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Pozor: reverse vymení start a end</text>
+<text x="575" y="1750" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-row + justify-start</text>
+<rect x="575" y="1758" width="235" height="40" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="583" y="1764" width="50" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="608.0" y="1783.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="639" y="1764" width="50" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="664.0" y="1783.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="695" y="1764" width="50" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="720.0" y="1783.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="575" y="1816" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">start</text>
+<text x="810" y="1816" font-size="11.5" font-weight="bold" fill="#c2410c" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">end</text>
+<line x1="610" y1="1812" x2="780" y2="1812" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ah2563eb)"/>
+<text x="825" y="1750" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-row + justify-end</text>
+<rect x="825" y="1758" width="235" height="40" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="890" y="1764" width="50" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="915.0" y="1783.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="946" y="1764" width="50" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="971.0" y="1783.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="1002" y="1764" width="50" height="28" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="1027.0" y="1783.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="825" y="1816" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">start</text>
+<text x="1060" y="1816" font-size="11.5" font-weight="bold" fill="#c2410c" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">end</text>
+<line x1="860" y1="1812" x2="1030" y2="1812" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ah2563eb)"/>
+<text x="575" y="1840" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-row-reverse + justify-start</text>
+<rect x="575" y="1848" width="235" height="40" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="640" y="1854" width="50" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="665.0" y="1873.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<rect x="696" y="1854" width="50" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="721.0" y="1873.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="752" y="1854" width="50" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="777.0" y="1873.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<text x="575" y="1906" font-size="11.5" font-weight="bold" fill="#c2410c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">end</text>
+<text x="810" y="1906" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">start</text>
+<line x1="780" y1="1902" x2="610" y2="1902" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ah2563eb)"/>
+<text x="825" y="1840" font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex-row-reverse + justify-end</text>
+<rect x="825" y="1848" width="235" height="40" rx="6" fill="#f8fafc" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="833" y="1854" width="50" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="858.0" y="1873.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<rect x="889" y="1854" width="50" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="914.0" y="1873.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="945" y="1854" width="50" height="28" rx="4" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="970.0" y="1873.0" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<text x="825" y="1906" font-size="11.5" font-weight="bold" fill="#c2410c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">end</text>
+<text x="1060" y="1906" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">start</text>
+<line x1="1030" y1="1902" x2="860" y2="1902" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ah2563eb)"/>
+<text x="580" y="1945" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Deti v opačnom poradí, ale vľavo?  →  flex-row-reverse + justify-end</text></g><g transform="translate(0,435)"><rect x="20" y="15" width="1060" height="56" rx="10" fill="#1e1b4b" stroke="#1e1b4b" stroke-width="0"/>
+<text x="550" y="52" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">justify + gap: kde bude medzera pri okraji?</text>
+<text x="60" y="110" font-size="15" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Rodič <tspan font-weight="bold">w-100</tspan> (400 px), tri kocky <tspan font-weight="bold">w-12</tspan> (48 px) vedľa seba.</text>
+<text x="60" y="134" font-size="15" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">Voľné miesto = ______ ______ ______ px.   Obrázky sú v mierke (1 px = 1,5 px na papieri).</text>
+<rect x="60" y="152" width="24" height="12" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/>
+<text x="92" y="163" font-size="13" font-weight="normal" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= miesto od justify</text>
+<rect x="260" y="152" width="24" height="12" rx="2" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.5"/>
+<text x="292" y="163" font-size="13" font-weight="normal" fill="#7e22ce" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= gap (pevná medzera medzi deťmi)</text>
+<rect x="40" y="182" width="1020" height="186" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="60" y="206" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">A)  </text>
+<text x="95" y="206" font-size="16" font-weight="bold" fill="#1e1b4b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex justify-between</text>
+<rect x="60.0" y="224" width="0.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<rect x="132.0" y="224" width="192.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="228.0" y="236" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="396.0" y="224" width="192.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="492.0" y="236" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="660.0" y="224" width="0.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<rect x="60" y="250" width="600.0" height="60" rx="6" fill="#fff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="60.0" y="260" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="96.0" y="286" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="324.0" y="260" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="360.0" y="286" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="588.0" y="260" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="624.0" y="286" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="60" y="332" font-size="11" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0</text>
+<text x="660.0" y="332" font-size="11" font-weight="normal" fill="#64748b" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">400 px</text>
+<text x="700" y="250" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">okraj:</text>
+<text x="700" y="274" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="306" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">medzi kockami:</text>
+<text x="700" y="330" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="350" font-size="12" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">← rozcvička: bez gap</text>
+<rect x="40" y="382" width="1020" height="186" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="60" y="406" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">B)  </text>
+<text x="95" y="406" font-size="16" font-weight="bold" fill="#1e1b4b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex justify-between gap-8</text>
+<rect x="60.0" y="424" width="0.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<rect x="132.0" y="424" width="144.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="204.0" y="436" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="276.0" y="424" width="48.0" height="16" rx="2" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.2"/>
+<text x="300.0" y="436" font-size="11.5" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="396.0" y="424" width="144.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="468.0" y="436" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="540.0" y="424" width="48.0" height="16" rx="2" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.2"/>
+<text x="564.0" y="436" font-size="11.5" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="660.0" y="424" width="0.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<rect x="60" y="450" width="600.0" height="60" rx="6" fill="#fff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="60.0" y="460" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="96.0" y="486" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="324.0" y="460" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="360.0" y="486" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="588.0" y="460" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="624.0" y="486" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="60" y="532" font-size="11" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0</text>
+<text x="660.0" y="532" font-size="11" font-weight="normal" fill="#64748b" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">400 px</text>
+<text x="700" y="450" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">okraj:</text>
+<text x="700" y="474" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="506" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">medzi kockami:</text>
+<text x="700" y="530" font-size="17" font-weight="bold" fill="#7e22ce" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<rect x="40" y="582" width="1020" height="186" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="60" y="606" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">C)  </text>
+<text x="95" y="606" font-size="16" font-weight="bold" fill="#1e1b4b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex justify-evenly</text>
+<rect x="60.0" y="624" width="96.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="108.0" y="636" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="228.0" y="624" width="96.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="276.0" y="636" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="396.0" y="624" width="96.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="444.0" y="636" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="564.0" y="624" width="96.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="612.0" y="636" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="60" y="650" width="600.0" height="60" rx="6" fill="#fff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="156.0" y="660" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="192.0" y="686" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="324.0" y="660" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="360.0" y="686" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="492.0" y="660" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="528.0" y="686" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="60" y="732" font-size="11" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0</text>
+<text x="660.0" y="732" font-size="11" font-weight="normal" fill="#64748b" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">400 px</text>
+<text x="700" y="650" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">okraj:</text>
+<text x="700" y="674" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="706" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">medzi kockami:</text>
+<text x="700" y="730" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="750" font-size="12" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">← rozcvička: bez gap</text>
+<rect x="40" y="782" width="1020" height="186" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="60" y="806" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">D)  </text>
+<text x="95" y="806" font-size="16" font-weight="bold" fill="#1e1b4b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex justify-evenly gap-8</text>
+<rect x="60.0" y="824" width="72.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="96.0" y="836" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="204.0" y="824" width="72.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="240.0" y="836" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="276.0" y="824" width="48.0" height="16" rx="2" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.2"/>
+<text x="300.0" y="836" font-size="11.5" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="396.0" y="824" width="72.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="432.0" y="836" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="468.0" y="824" width="48.0" height="16" rx="2" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.2"/>
+<text x="492.0" y="836" font-size="11.5" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="588.0" y="824" width="72.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="624.0" y="836" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="60" y="850" width="600.0" height="60" rx="6" fill="#fff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="132.0" y="860" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="168.0" y="886" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="324.0" y="860" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="360.0" y="886" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="516.0" y="860" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="552.0" y="886" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="60" y="932" font-size="11" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0</text>
+<text x="660.0" y="932" font-size="11" font-weight="normal" fill="#64748b" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">400 px</text>
+<text x="700" y="850" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">okraj:</text>
+<text x="700" y="874" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="906" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">medzi kockami:</text>
+<text x="700" y="930" font-size="17" font-weight="bold" fill="#7e22ce" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<rect x="40" y="982" width="1020" height="186" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="60" y="1006" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">E)  </text>
+<text x="95" y="1006" font-size="16" font-weight="bold" fill="#1e1b4b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex justify-around</text>
+<rect x="60.0" y="1024" width="64.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="92.0" y="1036" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="196.0" y="1024" width="128.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="260.0" y="1036" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="395.99999999999994" y="1024" width="128.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="459.99999999999994" y="1036" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="595.9999999999999" y="1024" width="64.00000000000011" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="628.0" y="1036" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="60" y="1050" width="600.0" height="60" rx="6" fill="#fff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="124.0" y="1060" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="160.0" y="1086" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="323.99999999999994" y="1060" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="359.99999999999994" y="1086" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="523.9999999999999" y="1060" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="559.9999999999999" y="1086" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="60" y="1132" font-size="11" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0</text>
+<text x="660.0" y="1132" font-size="11" font-weight="normal" fill="#64748b" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">400 px</text>
+<text x="700" y="1050" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">okraj:</text>
+<text x="700" y="1074" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="1106" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">medzi kockami:</text>
+<text x="700" y="1130" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="1150" font-size="12" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">← rozcvička: bez gap</text>
+<rect x="40" y="1182" width="1020" height="186" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="60" y="1206" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">F)  </text>
+<text x="95" y="1206" font-size="16" font-weight="bold" fill="#1e1b4b" text-anchor="start" font-family="Consolas, Courier New, monospace" xml:space="preserve" style="white-space:pre">flex justify-around gap-8</text>
+<rect x="60.0" y="1224" width="48.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="84.0" y="1236" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="180.0" y="1224" width="96.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="228.0" y="1236" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="276.0" y="1224" width="48.0" height="16" rx="2" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.2"/>
+<text x="300.0" y="1236" font-size="11.5" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="396.0" y="1224" width="96.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="444.0" y="1236" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="492.0" y="1224" width="48.0" height="16" rx="2" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.2"/>
+<text x="516.0" y="1236" font-size="11.5" font-weight="bold" fill="#7e22ce" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="612.0" y="1224" width="48.0" height="16" rx="2" fill="#bbf7d0" stroke="#15803d" stroke-width="1.2"/>
+<text x="636.0" y="1236" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre"></text>
+<rect x="60" y="1250" width="600.0" height="60" rx="6" fill="#fff" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="108.0" y="1260" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="144.0" y="1286" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">1</text>
+<rect x="324.0" y="1260" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="360.0" y="1286" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="540.0" y="1260" width="72.0" height="40" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="576.0" y="1286" font-size="16" font-weight="bold" fill="#15803d" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">3</text>
+<text x="60" y="1332" font-size="11" font-weight="normal" fill="#64748b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">0</text>
+<text x="660.0" y="1332" font-size="11" font-weight="normal" fill="#64748b" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">400 px</text>
+<text x="700" y="1250" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">okraj:</text>
+<text x="700" y="1274" font-size="17" font-weight="bold" fill="#15803d" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text>
+<text x="700" y="1306" font-size="14" font-weight="normal" fill="#1e293b" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">medzi kockami:</text>
+<text x="700" y="1330" font-size="17" font-weight="bold" fill="#7e22ce" text-anchor="start" font-family="Segoe UI, Arial, sans-serif" xml:space="preserve" style="white-space:pre">= ______ px</text></g></svg>
