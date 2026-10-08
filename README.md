@@ -11,3 +11,8 @@
 
 # 05 Téma - Flexbox
 - [05_tailwind_flexbox_studenti.html](https://danakozakova.github.io/SS_TIR_IIIC/05_tailwind_flexbox_studenti.html)
+- [05_flexbox_mapa_4_paky.svg](https://danakozakova.github.io/SS_TIR_IIIC/blob/main/05_flexbox_mapa_4_paky.svg)
+- [05_flexbox_mapa_4_paky_strana2.svg](https://danakozakova.github.io/SS_TIR_IIIC/blob/main/05_flexbox_mapa_4_paky_strana2.svg)
+- [05_flexbox_mapa_4_paky_strana3.svg](https://danakozakova.github.io/SS_TIR_IIIC/blob/main/05_flexbox_mapa_4_paky_strana3.svg)
+
+
