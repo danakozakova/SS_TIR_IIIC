@@ -18,7 +18,7 @@
 
 # 06 Téma - Node.js
 - [06_01_nodejs_uvod_studenti.html](https://danakozakova.github.io/SS_TIR_IIIC/06_01_nodejs_uvod_studenti.html)
-- [06_02_nodejs_instalacia_studenti.html](https://danakozakova.github.io/SS_TIR_IIIC/06_01_nodejs_instalacia_studenti.html)
+- [06_02_tailwind_instalacia_studenti.html](https://danakozakova.github.io/SS_TIR_IIIC/06_02_tailwind_instalacia_studenti.html)
 - 
 
   
