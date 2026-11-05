@@ -18,6 +18,8 @@
 
 # 06 Téma - Node.js
 - [06_01_nodejs_uvod_studenti.html](https://danakozakova.github.io/SS_TIR_IIIC/06_01_nodejs_uvod_studenti.html)
+- [06_02_nodejs_instalacia_studenti.html](https://danakozakova.github.io/SS_TIR_IIIC/06_01_nodejs_instalacia_studenti.html)
+- 
 
   
 NAHRAŤ: https://spstv-my.sharepoint.com/:f:/g/personal/dana_kozakova_strednaskolats_sk/IgC-YjUsDnA7QaSsz_N3BX1pAf2ZYi5FOsvYecX5LXFyuEM
