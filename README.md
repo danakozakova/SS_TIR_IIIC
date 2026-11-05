@@ -15,6 +15,8 @@
 - [05_flexbox_mapa_4_paky.svg](https://github.com/danakozakova/SS_TIR_IIIC/blob/main/05_flexbox_mapa_4_paky.svg)
 - [05_flexbox_mapa_4_paky_strana2.svg](https://github.com/danakozakova/SS_TIR_IIIC/blob/main/05_flexbox_mapa_4_paky_strana2.svg)
 - [05_flexbox_mapa_4_paky_strana3.svg](https://github.com/danakozakova/SS_TIR_IIIC/blob/main/05_flexbox_mapa_4_paky_strana3.svg)
-- 
+
+# 06 Téma - Node.js
+- [06_01_nodejs_uvod_studenti.html](https://danakozakova.github.io/SS_TIR_IIIC/06_01_nodejs_uvod_studenti.html)
 NAHRAŤ: https://spstv-my.sharepoint.com/:f:/g/personal/dana_kozakova_strednaskolats_sk/IgC-YjUsDnA7QaSsz_N3BX1pAf2ZYi5FOsvYecX5LXFyuEM
 
