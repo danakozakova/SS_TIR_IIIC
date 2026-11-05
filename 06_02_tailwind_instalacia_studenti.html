@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tailwind bez CDN — inštalácia (zadania)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8fafc; color: #1e293b; font-size: 20px; line-height: 1.7; }
+nav { position: sticky; top: 0; background: #1e1b4b; color: white; display: flex; gap: .25rem; padding: .6rem 2rem; flex-wrap: wrap; z-index: 100; align-items: center; }
+nav strong { color: white; margin-right: .5rem; }
+nav a { color: #a5b4fc; text-decoration: none; font-size: .85rem; padding: .3rem .9rem; border-radius: .25rem; }
+nav a:hover { background: #312e81; color: white; }
+section { max-width: 960px; margin: 0 auto; padding: 2.5rem 2rem; border-bottom: 1px solid #e2e8f0; }
+section:last-child { border-bottom: none; }
+h1 { font-size: 2.2rem; color: #1e1b4b; margin-bottom: .5rem; }
+h3 { font-size: 1.25rem; color: #4338ca; margin: 1.5rem 0 .6rem; }
+p  { margin-bottom: .85rem; }
+ul, ol { margin: .5rem 0 .85rem 1.5rem; }
+li { margin-bottom: .5rem; }
+code { background: #e0e7ff; color: #3730a3; padding: .15rem .5rem; border-radius: .3rem; font-size: .88em; font-family: 'Cascadia Code', 'Fira Code', monospace; }
+pre  { background: #0f172a; color: #7dd3fc; padding: 1.4rem 1.8rem; border-radius: .75rem; font-family: 'Cascadia Code', 'Fira Code', monospace; font-size: .95rem; overflow-x: auto; margin: 1rem 0 1.5rem; line-height: 1.7; }
+pre .cm { color: #64748b; } pre .st { color: #86efac; } pre .kw { color: #c084fc; } pre .tg { color: #60a5fa; } pre .at { color: #fbbf24; }
+.info { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin: 1rem 0; }
+.uloha { border-left: 4px solid #3b82f6; background: #eff6ff; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin-bottom: 1.5rem; }
+.uloha h2 { margin: 0 0 .5rem; color: #1e40af; font-size: 1.15rem; }
+.uloha p, .uloha li { margin: .25rem 0; color: #374151; }
+.check { background: #f0fdf4; border-left: 4px solid #22c55e; padding: .6rem 1.2rem; border-radius: 0 .4rem .4rem 0; margin: .5rem 0; font-size: .95rem; }
+.oddelovac { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<nav>
+  <strong>Tailwind bez CDN — návod</strong>
+  <a href="#k1">1 Node</a>
+  <a href="#k2">2 Projekt</a>
+  <a href="#k3">3 init</a>
+  <a href="#k4">4 Tailwind</a>
+  <a href="#k5">5 Súbory</a>
+  <a href="#k6">6 Generovanie</a>
+  <a href="#k7">7 Watch</a>
+  <a href="#tahak">Ťahák</a>
+</nav>
+
+<section id="start">
+  <h1>Tailwind CSS v4 bez CDN — krok po kroku</h1>
+  <div class="info" style="border-left-color:#22c55e;background:#f0fdf4;">
+    <p style="margin:0;"><strong>Cieľ:</strong> doteraz sme Tailwind ťahali cez CDN (<code>&lt;script&gt;</code>). Dnes ho nainštalujeme priamo do projektu — vyrobí nám súbor <code>output.css</code>, ktorý pripojíme k HTML. Triedy a HTML zostávajú rovnaké.</p>
+  </div>
+  <p>Pracuj v príkazovom riadku Windows: <strong>Win + R</strong> → napíš <code>cmd</code> → Enter.</p>
+</section>
+
+<section id="k1">
+  <div class="uloha">
+    <h2>Krok 1 — Nainštaluj Node.js</h2>
+    <ol>
+      <li>Otvor <code>nodejs.org/en/download</code></li>
+      <li>Vyber verziu <strong>LTS</strong> pre Windows, <strong>Windows Installer (.msi)</strong> (nie ZIP).</li>
+      <li>Spusti inštalátor, klikaj <strong>Next</strong>, nechaj predvolené (najmä <strong>npm</strong> a <strong>Add to PATH</strong>), <strong>Install</strong>, <strong>Finish</strong>.</li>
+      <li>Zavri a znova otvor okno <code>cmd</code>.</li>
+    </ol>
+    <p>Over, že to funguje:</p>
+    <pre>node -v
+npm -v</pre>
+    <div class="check">✅ Oba príkazy vypíšu číslo verzie (napr. <code>v26.13.0</code> a <code>11.20.0</code> — u teba môže byť iné). Žiadna chyba.</div>
+  </div>
+</section>
+
+<section id="k2">
+  <div class="uloha">
+    <h2>Krok 2 — Vytvor priečinok projektu</h2>
+    <pre>mkdir tailwind-projekt
+cd tailwind-projekt</pre>
+    <p><code>mkdir</code> vytvorí priečinok, <code>cd</code> sa doň presunie. Riadok má teraz končiť <code>...\tailwind-projekt&gt;</code>.</p>
+    <div class="check">✅ Pred kurzorom vidíš cestu, ktorá končí <code>tailwind-projekt&gt;</code>.</div>
+  </div>
+</section>
+
+<section id="k3">
+  <div class="uloha">
+    <h2>Krok 3 — Inicializuj projekt</h2>
+    <pre>npm init -y</pre>
+    <div class="check">✅ V priečinku vznikol súbor <code>package.json</code>.</div>
+    <p>Nič v ňom zatiaľ neupravuj.</p>
+  </div>
+</section>
+
+<section id="k4">
+  <div class="uloha">
+    <h2>Krok 4 — Nainštaluj Tailwind do projektu</h2>
+    <pre>npm install tailwindcss @tailwindcss/cli</pre>
+    <p>Chvíľu to trvá. Je normálne, že sa pridá veľa balíkov (napr. 28) — nástroje potrebujú ďalšie balíky.</p>
+    <div class="check">✅ Vznikol priečinok <code>node_modules</code> a súbor <code>package-lock.json</code>. Správa končí napr. <code>found 0 vulnerabilities</code>.</div>
+    <p><strong>Prípadné žlté upozornenie</strong> (<code>npm warn ...</code>) ignoruj — nič neschvaľuj navyše.</p>
+  </div>
+</section>
+
+<section id="k5">
+  <div class="uloha">
+    <h2>Krok 5 — Vytvor HTML a vstupné CSS</h2>
+    <p>Otvor projekt vo VS Code (<strong>File → Open Folder</strong> → <code>tailwind-projekt</code>). Vytvor <code>index.html</code>:</p>
+    <pre><span class="tg">&lt;!DOCTYPE html&gt;</span>
+<span class="tg">&lt;html</span> <span class="at">lang</span>=<span class="st">"sk"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;head&gt;</span>
+  <span class="tg">&lt;meta</span> <span class="at">charset</span>=<span class="st">"UTF-8"</span><span class="tg">&gt;</span>
+  <span class="tg">&lt;link</span> <span class="at">rel</span>=<span class="st">"stylesheet"</span> <span class="at">href</span>=<span class="st">"./output.css"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/head&gt;</span>
+<span class="tg">&lt;body</span> <span class="at">class</span>=<span class="st">"bg-slate-100 p-8"</span><span class="tg">&gt;</span>
+  <span class="tg">&lt;h1</span> <span class="at">class</span>=<span class="st">"text-3xl font-bold text-blue-600"</span><span class="tg">&gt;</span>Tailwind funguje bez CDN!<span class="tg">&lt;/h1&gt;</span>
+  <span class="tg">&lt;p</span> <span class="at">class</span>=<span class="st">"mt-4 text-slate-700"</span><span class="tg">&gt;</span>Táto stránka používa CSS z nášho projektu.<span class="tg">&lt;/p&gt;</span>
+<span class="tg">&lt;/body&gt;</span>
+<span class="tg">&lt;/html&gt;</span></pre>
+    <p>A <code>input.css</code> (vedľa <code>index.html</code>) s jediným riadkom:</p>
+    <pre><span class="kw">@import</span> <span class="st">"tailwindcss"</span>;</pre>
+    <p>Oba ulož (<strong>Ctrl + S</strong>). V HTML <strong>nesmie</strong> byť starý CDN <code>&lt;script&gt;</code>.</p>
+    <div class="check">✅ V projekte sú <code>index.html</code> a <code>input.css</code>.</div>
+  </div>
+</section>
+
+<section id="k6">
+  <div class="uloha">
+    <h2>Krok 6 — Vygeneruj output.css</h2>
+    <p>Vráť sa do <code>cmd</code> (musíš byť v priečinku projektu) a spusti:</p>
+    <pre>npx @tailwindcss/cli -i ./input.css -o ./output.css --watch</pre>
+    <div class="check">✅ Vypíše sa <code>Done in ...</code> a vznikol súbor <code>output.css</code>.</div>
+    <p>Terminál zostane „obsadený" — to je správne, sleduje zmeny. <strong>Nechaj ho bežať.</strong></p>
+  </div>
+</section>
+
+<section id="k7">
+  <div class="uloha">
+    <h2>Krok 7 — Otvor stránku a over watch</h2>
+    <ol>
+      <li>V Prieskumníkovi dvojklikni na <code>index.html</code> → otvorí sa v prehliadači (sivé pozadie, modrý nadpis).</li>
+      <li>V HTML zmeň <code>text-blue-600</code> na <code>text-red-600</code>, ulož (Ctrl+S).</li>
+      <li>Obnov stránku v prehliadači (<strong>Ctrl + R</strong>).</li>
+    </ol>
+    <div class="check">✅ Nadpis je po obnovení <strong>červený</strong>. (<code>--watch</code> prepísal CSS; stránku si obnovil ručne.)</div>
+    <p>Zastavenie sledovania: <strong>Ctrl + C</strong> v termináli.</p>
+  </div>
+</section>
+
+<hr class="oddelovac">
+
+<section id="tahak">
+  <h3>Ťahák príkazov</h3>
+  <p><strong>Overenie inštalácie:</strong></p>
+  <pre>node -v
+npm -v</pre>
+  <p><strong>Nový projekt (raz):</strong></p>
+  <pre>mkdir tailwind-projekt
+cd tailwind-projekt
+npm init -y
+npm install tailwindcss @tailwindcss/cli</pre>
+  <p><strong>Generovanie CSS (aj na existujúcom projekte):</strong></p>
+  <pre>npx @tailwindcss/cli -i ./input.css -o ./output.css --watch</pre>
+  <p><strong>Zastavenie:</strong> <code>Ctrl + C</code></p>
+</section>
+
+</body>
+</html>

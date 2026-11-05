@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Node.js — úvod (zadania)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8fafc; color: #1e293b; font-size: 20px; line-height: 1.7; }
+
+nav { position: sticky; top: 0; background: #1e1b4b; color: white; display: flex; gap: .25rem; padding: .6rem 2rem; flex-wrap: wrap; z-index: 100; align-items: center; }
+nav strong { color: white; margin-right: .5rem; }
+nav a { color: #a5b4fc; text-decoration: none; font-size: .85rem; padding: .3rem .9rem; border-radius: .25rem; }
+nav a:hover { background: #312e81; color: white; }
+
+section { max-width: 960px; margin: 0 auto; padding: 2.5rem 2rem; border-bottom: 1px solid #e2e8f0; }
+section:last-child { border-bottom: none; }
+
+h1 { font-size: 2.2rem; color: #1e1b4b; margin-bottom: .5rem; }
+h3 { font-size: 1.25rem; color: #4338ca; margin: 1.5rem 0 .6rem; }
+p  { margin-bottom: .85rem; }
+ul, ol { margin: .5rem 0 .85rem 1.5rem; }
+li { margin-bottom: .5rem; }
+
+code { background: #e0e7ff; color: #3730a3; padding: .15rem .5rem; border-radius: .3rem; font-size: .88em; font-family: 'Cascadia Code', 'Fira Code', monospace; }
+pre  { background: #0f172a; color: #7dd3fc; padding: 1.4rem 1.8rem; border-radius: .75rem; font-family: 'Cascadia Code', 'Fira Code', monospace; font-size: .95rem; overflow-x: auto; margin: 1rem 0 1.5rem; line-height: 1.7; }
+pre .cm { color: #64748b; }
+pre .st { color: #86efac; }
+pre .kw { color: #c084fc; }
+pre .at { color: #fbbf24; }
+
+.info    { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin: 1rem 0; }
+
+.uloha  { border-left: 4px solid #3b82f6; background: #eff6ff; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin-bottom: 1.5rem; }
+.uloha h2 { margin: 0 0 .5rem; color: #1e40af; font-size: 1.1rem; }
+.uloha p, .uloha li { margin: .25rem 0; color: #374151; }
+.projekt { border-left: 4px solid #22c55e; background: #f0fdf4; }
+.projekt h2 { color: #15803d; }
+.bonus   { border-left: 4px solid #a855f7; background: #fdf4ff; }
+.bonus h2 { color: #7e22ce; }
+.oddelovac { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<nav>
+  <strong>Node.js — zadania</strong>
+  <a href="#start">Štart</a>
+  <a href="#u0">Úloha 0</a>
+  <a href="#u1">Úloha 1</a>
+  <a href="#u2">Úloha 2</a>
+  <a href="#projekt">Mini-projekt</a>
+  <a href="#bonus">Bonus</a>
+</nav>
+
+<section id="start">
+  <h1>Node.js — prvé kroky</h1>
+  <div class="info" style="border-left-color:#22c55e;background:#f0fdf4;">
+    <p style="margin:0;font-size:1.15rem;"><strong>Dnes sa neučíme JavaScript.</strong> Dnes si len vyskúšame Node.js — program, ktorý nám v budúcnosti pripraví <strong>Tailwind CSS priamo v projekte namiesto CDN</strong>.</p>
+  </div>
+  <div class="info">
+    <p style="margin:.2rem 0;"><strong>Dnes nič neinštaluješ.</strong> Pracuješ v online Node playground:</p>
+    <p style="margin:.2rem 0;">👉 otvor <code>onecompiler.com/nodejs</code> (alebo <code>programiz.com/javascript/online-compiler</code>).</p>
+    <p style="margin:.2rem 0;">Kód píšeš vľavo, spúšťaš tlačidlom <strong>Run</strong>, výstup sa ukáže v konzole. Je to to isté, ako keby si spustil(a) <code>node subor.js</code> na počítači.</p>
+  </div>
+</section>
+
+<section id="u0">
+  <div class="uloha">
+    <h2>Úloha 0 — tvoj prvý program</h2>
+    <p>Zmaž všetko, čo je v playgrounde, a napíš jeden riadok:</p>
+    <pre>console.log(<span class="st">"Ahoj, volám sa ..."</span>);</pre>
+    <p>Stlač <strong>Run</strong>. V konzole sa má objaviť tvoj text. Práve si spustil(a) JavaScript <strong>mimo prehliadača</strong> — bez stránky.</p>
+  </div>
+</section>
+
+<section id="u1">
+  <div class="uloha">
+    <h2>Úloha 1 — Predikuj: čo sa vypíše?</h2>
+    <p>Najprv <strong>tipni</strong> výsledok (napíš si ho), až potom spusti a over:</p>
+    <pre>console.log(<span class="st">"5 + 3 = "</span> + (<span class="at">5</span> + <span class="at">3</span>));
+console.log(<span class="st">"5 + 3 = "</span> + <span class="at">5</span> + <span class="at">3</span>);</pre>
+    <p>Prečo sú výsledky rozdielne? Zapíš si vysvetlenie jednou vetou.</p>
+  </div>
+</section>
+
+<section id="u2">
+  <div class="uloha">
+    <h2>Úloha 2 — Premenné a výpočet</h2>
+    <p>Ulož dve čísla do premenných a vypíš ich súčet:</p>
+    <pre><span class="kw">const</span> a = <span class="at">12</span>;
+<span class="kw">const</span> b = <span class="at">30</span>;
+console.log(<span class="st">"Súčet je:"</span>, a + b);</pre>
+    <p>Potom skús: zmeň čísla, pridaj tretiu premennú, vypíš aj súčin (<code>*</code>).</p>
+  </div>
+</section>
+
+<hr class="oddelovac">
+
+<section id="projekt">
+  <div class="uloha projekt">
+    <h2>🎯 Mini-projekt — Kalkulačka voľného miesta</h2>
+    <p>Napíš program, ktorý spočíta <strong>voľné miesto vo flex kontajneri</strong> — ten vzorec z testu, teraz ako Node program.</p>
+    <p>Musí obsahovať:</p>
+    <ul>
+      <li>✅ premenné <code>sirkaRodica</code>, <code>pocetDeti</code>, <code>sirkaDietata</code>, <code>gap</code></li>
+      <li>✅ výpočet: <code>volneMiesto = sirkaRodica − pocetDeti · sirkaDietata − (pocetDeti − 1) · gap</code></li>
+      <li>✅ výpis výsledku peknou vetou cez <code>console.log</code></li>
+      <li>✅ otestuj dva príklady — stačí zmeniť čísla v premenných</li>
+    </ul>
+    <p><strong>Príklady na kontrolu:</strong></p>
+    <ul>
+      <li>rodič 400, 3 prvky po 80, gap 0 → voľné miesto <strong>160 px</strong></li>
+      <li>rodič 500, 4 prvky po 60, gap 16 → voľné miesto <strong>212 px</strong></li>
+    </ul>
+    <p><strong>Postup:</strong> najprv si napíš premenné, potom jeden riadok výpočtu, potom výpis. Spúšťaj priebežne, nie až na konci.</p>
+    <p><strong>Pozor:</strong> gapov je o jeden menej ako prvkov → <code>(pocetDeti − 1)</code>.</p>
+  </div>
+</section>
+
+<section id="bonus">
+  <div class="uloha bonus">
+    <h2>⭐ Bonus — pre tých, čo stihli</h2>
+    <ol>
+      <li>Dopočítaj <strong>medzeru pri <code>justify-between</code></strong>: <code>medzera = volneMiesto / (pocetDeti − 1)</code>. Pre 400/3/80 má vyjsť 80 px.</li>
+      <li>Nech program <strong>oznámi, ak sa prvky nezmestia</strong> (voľné miesto je záporné) — použi <code>if ... else</code>.</li>
+      <li>Zisti (cez AI alebo doma s nainštalovaným Node), čo robí <code>process.argv</code> — ako do programu dostať čísla priamo z príkazu.</li>
+    </ol>
+  </div>
+</section>
+
+</body>
+</html>
