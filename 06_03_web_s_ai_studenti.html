@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vlastný web s pomocou AI — zadania</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f8fafc; color: #1e293b; font-size: 20px; line-height: 1.7; }
+nav { position: sticky; top: 0; background: #1e1b4b; color: white; display: flex; gap: .25rem; padding: .6rem 2rem; flex-wrap: wrap; z-index: 100; align-items: center; }
+nav strong { color: white; margin-right: .5rem; }
+nav a { color: #a5b4fc; text-decoration: none; font-size: .85rem; padding: .3rem .9rem; border-radius: .25rem; }
+nav a:hover { background: #312e81; color: white; }
+section { max-width: 960px; margin: 0 auto; padding: 2.5rem 2rem; border-bottom: 1px solid #e2e8f0; }
+section:last-child { border-bottom: none; }
+h1 { font-size: 2.2rem; color: #1e1b4b; margin-bottom: .5rem; }
+h3 { font-size: 1.25rem; color: #4338ca; margin: 1.5rem 0 .6rem; }
+p  { margin-bottom: .85rem; }
+ul, ol { margin: .5rem 0 .85rem 1.5rem; }
+li { margin-bottom: .5rem; }
+code { background: #e0e7ff; color: #3730a3; padding: .15rem .5rem; border-radius: .3rem; font-size: .88em; font-family: 'Cascadia Code', 'Fira Code', monospace; }
+pre  { background: #0f172a; color: #7dd3fc; padding: 1.4rem 1.8rem; border-radius: .75rem; font-family: 'Cascadia Code', 'Fira Code', monospace; font-size: .95rem; overflow-x: auto; margin: 1rem 0 1.5rem; line-height: 1.7; white-space: pre-wrap; }
+pre .fill { color: #f472b6; font-weight: bold; }
+.info { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin: 1rem 0; }
+.uloha  { border-left: 4px solid #3b82f6; background: #eff6ff; padding: 1rem 1.5rem; border-radius: 0 .5rem .5rem 0; margin-bottom: 1.5rem; }
+.uloha h2 { margin: 0 0 .5rem; color: #1e40af; font-size: 1.15rem; }
+.uloha p, .uloha li { margin: .25rem 0; color: #374151; }
+.projekt { border-left: 4px solid #22c55e; background: #f0fdf4; }
+.projekt h2 { color: #15803d; }
+.bonus   { border-left: 4px solid #a855f7; background: #fdf4ff; }
+.bonus h2 { color: #7e22ce; }
+.check { background: #f0fdf4; border-left: 4px solid #22c55e; padding: .6rem 1.2rem; border-radius: 0 .4rem .4rem 0; margin: .5rem 0; font-size: .95rem; }
+.oddelovac { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<nav>
+  <strong>Vlastný web s pomocou AI</strong>
+  <a href="#k1">1 Služba</a>
+  <a href="#k2">2 Prompt</a>
+  <a href="#k3">3 Vlož</a>
+  <a href="#k4">4 Dolaď</a>
+  <a href="#projekt">Mini-projekt</a>
+  <a href="#bonus">Bonus</a>
+</nav>
+
+<section id="start">
+  <h1>Vlastný web s pomocou AI — krok po kroku</h1>
+  <div class="info">
+    <p style="margin:0;"><strong>Pracuješ vo svojom projekte z minula</strong> (ten s <code>output.css</code>). Kód píšeš do <code>index.html</code> vo VS Code, <code>--watch</code> necháš bežať, stránku obnovuješ cez <strong>Ctrl + R</strong>. Vzor, kam smerujeme: <code>carfresh.sk</code>.</p>
+  </div>
+</section>
+
+<section id="k1">
+  <div class="uloha">
+    <h2>Krok 1 — Vyber si službu</h2>
+    <p>Zvoľ si jednu jednoduchú službu, ktorú vieš opísať (kaderníctvo, kosenie trávy, doučovanie, oprava bicyklov, výroba tort…).</p>
+    <p>Napíš si na papier: čo ponúkaš, kde pôsobíš, 3 konkrétne služby.</p>
+    <div class="check">✅ Vieš vymenovať svoju službu a 3 veci, ktoré ponúka.</div>
+  </div>
+</section>
+
+<section id="k2">
+  <div class="uloha">
+    <h2>Krok 2 — Napíš prompt</h2>
+    <p>Otvor si AI (ChatGPT, Gemini, Copilot — ľubovoľnú). Skopíruj tento prompt a nahraď každé <span class="fill" style="color:#db2777;">#####</span> svojím údajom:</p>
+    <pre>Vytvor jednostránkový web pre moju službu.
+Použi Tailwind CSS — triedy píš priamo do HTML, žiadny vlastný &lt;style&gt;.
+Vráť jeden súbor index.html.
+
+MOJA SLUŽBA
+- Čo ponúkam: <span class="fill">#####</span>
+- Kde pôsobím: <span class="fill">#####</span>
+- Pre koho to je: <span class="fill">#####</span>
+
+SEKCIE (v tomto poradí)
+1. Hlavička s menu (kotvy na sekcie)
+2. Hero — nadpis „<span class="fill">#####</span>", podnadpis, tlačidlo „<span class="fill">#####</span>"
+3. Služby — <span class="fill">#####</span> karty (emoji, názov, veta popis)
+4. Ako to funguje — 3 kroky: <span class="fill">#####</span>, <span class="fill">#####</span>, <span class="fill">#####</span>
+5. Kontakt — telefón <span class="fill">#####</span>, e-mail <span class="fill">#####</span>, formulár (meno, správa)
+6. Pätička — názov služby a rok
+
+VZHĽAD
+- Hlavná farba: <span class="fill">#####</span>, doplnková: <span class="fill">#####</span>
+- Štýl: <span class="fill">#####</span>
+- Responzívne: mobil = karty pod sebou, PC = vedľa seba
+
+DÔLEŽITÉ
+- Iba Tailwind triedy. Žiadny CDN &lt;script&gt;, žiadny vlastný &lt;style&gt;.</pre>
+    <div class="check">✅ Čím konkrétnejšie doplníš <code>#####</code>, tým lepší web dostaneš.</div>
+  </div>
+</section>
+
+<section id="k3">
+  <div class="uloha">
+    <h2>Krok 3 — Vlož do projektu</h2>
+    <ol>
+      <li>Skopíruj výstup AI do svojho <code>index.html</code>.</li>
+      <li>Over, že v <code>&lt;head&gt;</code> je <code>&lt;link rel="stylesheet" href="./output.css"&gt;</code>.</li>
+      <li>Nechaj bežať <code>--watch</code>, otvor <code>index.html</code> v prehliadači.</li>
+    </ol>
+    <div class="check">✅ Stránka sa zobrazí so štýlmi (z tvojho <code>output.css</code>).</div>
+  </div>
+</section>
+
+<section id="k4">
+  <div class="uloha">
+    <h2>Krok 4 — Dolaď to sám</h2>
+    <p>AI to spravila „skoro". Teraz si na rade ty. Prejdi a oprav:</p>
+    <ul>
+      <li>AI pridalo <code>&lt;script&gt;</code> CDN alebo <code>&lt;style&gt;</code>? → zmaž, máme <code>output.css</code>.</li>
+      <li>Karty na PC vedľa seba? → <code>flex</code>/<code>grid</code> + <code>md:</code>.</li>
+      <li>Priveľa farieb? → zjednoť na hlavnú + doplnkovú.</li>
+      <li>Natlačené? → medzery <code>gap-</code>, <code>p-</code>, <code>mt-</code>.</li>
+      <li>Zmenši okno → vyzerá dobre na mobile?</li>
+    </ul>
+    <div class="check">✅ Po každej zmene ulož (Ctrl+S) a obnov stránku (Ctrl+R).</div>
+  </div>
+</section>
+
+<hr class="oddelovac">
+
+<section id="projekt">
+  <div class="uloha projekt">
+    <h2>🎯 Mini-projekt — tvoja stránka služby</h2>
+    <p>Odovzdaj jednostránkový web vlastnej služby. Musí mať:</p>
+    <ul>
+      <li>✅ hlavičku s menu</li>
+      <li>✅ hero (nadpis, podnadpis, tlačidlo)</li>
+      <li>✅ aspoň 3 karty služieb vedľa seba na PC</li>
+      <li>✅ „ako to funguje" (3 kroky)</li>
+      <li>✅ kontakt (telefón, e-mail, formulár)</li>
+      <li>✅ iba <code>output.css</code> (žiadny CDN, žiadny <code>&lt;style&gt;</code>)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="bonus">
+  <div class="uloha bonus">
+    <h2>⭐ Bonus</h2>
+    <ol>
+      <li><strong>Cenník:</strong> 3 karty s balíkmi a cenami, jednu označ „najobľúbenejší".</li>
+      <li><strong>Hover na kartách:</strong> <code>hover:shadow-xl hover:-translate-y-1 transition</code></li>
+      <li><strong>Galéria:</strong> <code>grid grid-cols-2 md:grid-cols-4 gap-4</code></li>
+    </ol>
+  </div>
+</section>
+
+</body>
+</html>
